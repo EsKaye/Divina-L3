@@ -1,0 +1,78 @@
+# Dependencies
+node_modules
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Build output
+dist
+build
+out
+.next
+.cache
+coverage
+
+# Generated files
+*.d.ts
+*.generated.*
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and editor files
+.vscode
+.idea
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Deployment
+.cache
+deployments/
+artifacts/
+
+# Hardhat
+cache/
+typechain-types/
+
+# Solidity
+artifacts/
+# Exclude all .sol files in node_modules
+**/node_modules/**/*.sol
+
+# Exclude all .sol files in test directories
+**/test/**/*.sol
+
+# Exclude all .sol files in script directories
+**/script/**/*.sol
+
+# Exclude all .sol files in mock directories
+**/mock/**/*.sol
+
+# Exclude all .sol files in mocks directories
+**/mocks/**/*.sol
+
+# Exclude all .sol files in fixtures directories
+**/fixtures/**/*.sol
+
+# Exclude all .sol files in examples directories
+**/examples/**/*.sol

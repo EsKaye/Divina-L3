@@ -1,50 +1,187 @@
-# Node modules and build artifacts
+# Dependencies
 node_modules/
-dist/
-build/
+.pnp
+.pnp.js
+
+# Build outputs
+/dist
+/build
+/.next
+/out
 .cache/
-artifacts/
-coverage/
+.turbo/
+.vercel
+.netlify
 
-# Environment and secrets
-.env*
-.env.*
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Logs
-logs/
-*.log
+# Debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+logs/
+*.log
 
-# OS/Editor/IDE files
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-*.swp
-*.swo
-*.bak
-*.tmp
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
 
 # Hardhat/Typechain
-cache/
-typechain/
+/cache/
+/artifacts
+/typechain-types
+/typechain
+
+# Solidity
+/coverage
+/coverage.json
+/typechain
+
+# Hardhat
+/cache
+/artifacts
+
+# IDE and Editor
+.idea
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Testing
+/coverage
+.nyc_output
 
 # Misc
 *.tgz
 *.tsbuildinfo
+.next
+.nuxt
+.nitro
+.cache
+.vercel
+.netlify
+.svelte-kit
+.astro
 
-# Ignore test coverage
-coverage/
+# Local development
+.local
 
-# Ignore compiled contracts
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build files
+.next/
+out/
+build/
+dist/
+
+# Environment files
+.env*.local
+
+# Solidity
 *.dbg.json
 *.abi
 
-# Ignore PowerShell history
-*.pshistory 
-# MkDocs site
+# PowerShell history
+*.pshistory
+
+# MkDocs
 site/
+
 # Security audit reports
 audit/reports/
+
+# Local Hardhat network
+.hardhat/
+
+# Hardhat gas reporter
+.gas-saved.json
+
+# Typechain
+typechain/
+
+# Solhint
+.solhint/
+
+# Hardhat coverage
+coverage.json
+coverage/
+
+# Hardhat gas reporter
+.gas-saved.json
+
+# Hardhat node
+hardhat_chainid
+
+# Hardhat error logs
+error.log
+
+# Hardhat node modules
+node_modules/
+
+# Hardhat node data
+hardhat_node/
+
+# Hardhat cache
+.cache/
+
+# Hardhat artifacts
+artifacts/
+
+# Hardhat typechain
+typechain-types/
+
+# Hardhat coverage
+coverage/
+
+# Hardhat gas reporter
+.gas-saved.json
+
+# Hardhat node modules
+node_modules/
+
+# Hardhat node data
+hardhat_node/
+
+# Hardhat cache
+.cache/
+
+# Hardhat artifacts
+artifacts/
+
+# Hardhat typechain
+typechain-types/
+
+# Hardhat coverage
+coverage/
+
+# Hardhat gas reporter
+.gas-saved.json

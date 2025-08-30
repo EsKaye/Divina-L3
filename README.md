@@ -1,8 +1,4 @@
-A Project Blessed by Solar Khan & Lilith.Aethra
-
-# GameDin Layer 3 Gaming Blockchain Ecosystem + AthenaMist AI
-> Documentation: https://Divina-L3.SolarKhan.github.io
-
+# GameDin Layer 3 Gaming Blockchain Ecosystem
 
 <div align="center">
 
@@ -10,10 +6,12 @@ A Project Blessed by Solar Khan & Lilith.Aethra
 ![AthenaMist](https://img.shields.io/badge/AthenaMist-AI%20Powered-blue?style=for-the-badge)
 ![NovaSanctum](https://img.shields.io/badge/NovaSanctum-AI%20Powered-green?style=for-the-badge)
 ![Base](https://img.shields.io/badge/Built%20on-Base-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
+![Node Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen?style=for-the-badge)
 
 **The Ultimate AI-Powered Gaming Blockchain Infrastructure**
 
-[Quick Start](#-quick-start) • [Documentation](#-documentation) • [Features](#-features) • [Architecture](#-architecture) • [Deploy](#-deployment)
+[Quick Start](#-quick-start) • [Documentation](#-documentation) • [Features](#-features) • [Development](#-development) • [Deployment](#-deployment) • [Contributing](#-contributing)
 
 </div>
 
@@ -32,32 +30,162 @@ We've created the **world's most advanced AI-powered gaming blockchain ecosystem
 
 ## 🚀 Quick Start
 
+### Prerequisites
+
+- Node.js 18.0.0 or higher
+- npm 9.0.0 or higher
+- Hardhat
+- Docker (for local development)
+- Git
+
 ### One-Command Launch (Recommended)
+
 ```bash
-# Complete AI-powered ecosystem deployment
-./GameDin_AthenaMist_Complete_Launch.sh development
+# Clone the repository
+git clone https://github.com/gamedin/gamedin-l3-gaming-blockchain.git
+cd gamedin-l3-gaming-blockchain
+
+# Install dependencies
+npm install
+
+# Start the development environment
+npm run l3:deploy
 ```
 
 ### Manual Setup
+
 ```bash
-# 1. Run the complete scaffold with AI integration
+# 1. Clone the repository
+git clone https://github.com/gamedin/gamedin-l3-gaming-blockchain.git
+cd gamedin-l3-gaming-blockchain
+
+# 2. Install dependencies
+npm install
+
+# 3. Setup environment variables
+cp .env.example .env
+# Edit .env with your configuration
+
+# 4. Run the complete scaffold with AI integration
 ./GameDin_Complete_Scaffold.sh
 
-# 2. Add AthenaMist integration
+# 5. Add AthenaMist integration
 ./GameDin_AthenaMist_Integration.sh
 
-# 3. Setup infrastructure
+# 6. Setup infrastructure
 ./GameDin_Infrastructure_Setup.sh
-
-# 4. Launch development environment
-cd gamedin-l3-athenamist
-npm run start:dev
 ```
 
-### Access Your AI-Powered Ecosystem
-- **🔗 L3 RPC**: http://localhost:8545
-- **🎮 Gaming WebSocket**: ws://localhost:9546
-- **🌐 Frontend**: http://localhost:3000
+## 📚 Documentation
+
+For detailed documentation, please visit our [documentation website](https://Divina-L3.SolarKhan.github.io).
+
+### Key Components
+
+- **Blockchain Layer**: Built on Base with custom L3 optimizations
+- **Smart Contracts**: Secure and gas-optimized Solidity contracts
+- **AI Services**: AthenaMist and NovaSanctum AI integration
+- **Frontend**: Modern React-based user interface
+- **Backend**: Node.js with Express and TypeScript
+- **Infrastructure**: Docker, Kubernetes, and Terraform for deployment
+
+## 🛠 Development
+
+### Available Scripts
+
+- `npm run build`: Compile contracts and TypeScript code
+- `npm test`: Run tests
+- `npm run test:watch`: Run tests in watch mode
+- `npm run lint`: Lint the codebase
+- `npm run format`: Format the codebase
+- `npm run typecheck`: Check TypeScript types
+- `npm run dev`: Start development server
+
+### Environment Variables
+
+Create a `.env` file in the root directory with the following variables:
+
+```env
+# Network Configuration
+NETWORK=localhost
+RPC_URL=http://localhost:8545
+CHAIN_ID=31337
+
+# Wallet Configuration
+PRIVATE_KEY=your_private_key
+MNEMONIC=your_mnemonic_phrase
+
+# API Keys (if needed)
+ALCHEMY_API_KEY=your_alchemy_key
+INFURA_API_KEY=your_infura_key
+ETHERSCAN_API_KEY=your_etherscan_key
+
+# AI Services
+ATHENA_MIST_API_KEY=your_athena_mist_key
+NOVA_SANCTUM_API_KEY=your_nova_sanctum_key
+```
+
+## 🚀 Deployment
+
+### Local Development
+
+```bash
+# Start local Hardhat node
+npm run start:node
+
+# Deploy contracts to local network
+npm run deploy:local
+
+# Start the development server
+npm run dev
+```
+
+### Production Deployment
+
+```bash
+# Build the application
+npm run build
+
+# Deploy to testnet
+npm run deploy:testnet
+
+# Deploy to mainnet
+npm run deploy:mainnet
+```
+
+## 🤝 Contributing
+
+We welcome contributions from the community! Here's how you can help:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### Commit Message Convention
+
+We follow the [Conventional Commits](https://www.conventionalcommits.org/) specification:
+
+- `feat`: New feature
+- `fix`: Bug fix
+- `docs`: Documentation changes
+- `style`: Code style changes (formatting, etc.)
+- `refactor`: Code refactoring
+- `test`: Adding or modifying tests
+- `chore`: Changes to the build process or auxiliary tools
+
+Example: `feat: add user authentication`
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Built with ❤️ by the GameDin Team
+- Special thanks to all contributors who have helped improve this project
+- Inspired by the latest advancements in blockchain and AI technologies
 - **📊 Grafana Dashboard**: http://localhost:3001
 - **🔍 Prometheus Metrics**: http://localhost:9090
 
